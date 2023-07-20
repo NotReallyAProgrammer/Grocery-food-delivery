@@ -1,0 +1,122 @@
+@use "../../../scss/util/" as u;
+
+.header {
+  width: 100%;
+  top: 0;
+  margin-top: u.rem(32);
+  position: fixed;
+  padding: u.rem(16) u.rem(24) 0 u.rem(24);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    margin-left: u.rem(135);
+    cursor: pointer;
+
+    &_img {
+      width: u.rem(155);
+      height: u.rem(44);
+    }
+  }
+
+  &__menu {
+    text-align: center;
+    cursor: pointer;
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      gap: u.rem(39);
+
+      li {
+        font-weight: 600;
+      }
+
+      .home {
+        color: var(--main-color);
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    margin-right: u.rem(135);
+
+    .search_container {
+      width: u.rem(289);
+      height: u.rem(54);
+
+      border-radius: u.rem(5);
+      box-shadow: 0 0 u.rem(10) 0 hsla(208, 16%, 16%, 0.1);
+      .search-icon {
+        position: absolute;
+        margin-top: u.rem(26);
+        margin-left: u.rem(20);
+        font-size: u.rem(14);
+        line-height: u.rem(38);
+        top: 0;
+        color: #74788d;
+      }
+
+      .search {
+        width: u.rem(220);
+        height: u.rem(54);
+        padding-left: u.rem(40);
+        padding-right: u.rem(40);
+        font-size: u.rem(14);
+        border: none;
+        outline: 0;
+        color: #74788d;
+      }
+
+      .line {
+        position: absolute;
+        width: u.rem(2);
+        height: u.rem(27);
+        margin-top: u.rem(32);
+        margin-right: u.rem(220);
+        right: 0;
+        top: 0;
+        background-color: hsl(0, 0%, 95%);
+      }
+
+      .cart {
+        cursor: pointer;
+        margin-left: u.rem(25);
+        font-size: u.rem(18);
+        align-items: center;
+
+        .cart_notification {
+          position: relative;
+          width: u.rem(28);
+          height: u.rem(28);
+          top: u.rem(-75);
+          right: u.rem(-10);
+          margin-left: auto;
+          padding-top: u.rem(3.5);
+          background-color: var(--main-color);
+          color: #ffff;
+          font-size: u.rem(14);
+          text-align: center;
+          border-radius: 50%;
+          box-shadow: 0 0 u.rem(10) 0 hsla(208, 16%, 16%, 0.1);
+
+          &.pulse {
+            animation: pulse-animation 1.2s infinite;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0 hsla(360, 92%, 67%, 0.6);
+  }
+
+  100% {
+    box-shadow: 0 0 0 u.rem(8) hsla(194, 67%, 30%, 0);
+  }
+}
