@@ -1,1 +1,43 @@
-<p>footer works!</p>
+<footer class="footer">
+  <div class="footer__top">
+    <img [src]="'../../assets/pics/logo.png'" alt="logo" class="logo" />
+    <span class="company"> Company</span>
+    <span class="service"> Services</span>
+    <span class="end"> Get in touch</span>
+  </div>
+
+  <div class="footer__middle">
+    <p class="text_desc">
+      Fast delivery, which is active all over the world, serves with many
+      transportation vehicles.
+    </p>
+
+    <div class="company_container">
+      <ul>
+        <li *ngFor="let company of companyData">
+          <a>{{ company.label }}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="service_container">
+      <ul>
+        <li *ngFor="let service of serviceData">
+          <a>{{ service.label }}</a>
+        </li>
+      </ul>
+    </div>
+
+    <p class="subscribe_desc">
+      Subscribe to our weekly Newsletter and receive updates via email.
+    </p>
+  </div>
+  <div class="line_container"></div>
+  <div class="footer__bottom">
+    <p class="all_rights_reserved">All Rights Reserved @ Miong 2021</p>
+
+    <div class="policy_container">
+      <a class="terms"> Terms & Conditions </a>
+      <a class="privacy"> Privacy & Policy </a>
+    </div>
+  </div>
+</footer>
