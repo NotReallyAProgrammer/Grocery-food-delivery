@@ -8,11 +8,11 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
-}
-body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
   font-family: u.$font;
   background-color: hsl(0, 0%, 100%);
 }
