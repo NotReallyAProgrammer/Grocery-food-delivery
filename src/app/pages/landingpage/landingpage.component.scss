@@ -1,0 +1,113 @@
+@use "../../../scss/util" as u;
+.main {
+  width: calc(100% - u.rem(325));
+  height: u.rem(900);
+  margin-top: u.rem(174);
+  margin-inline: auto;
+  background-color: #fff; //change in body
+
+  &__left {
+    .info_container {
+      width: u.rem(214);
+      height: u.rem(46);
+      background-color: #fdecec;
+      border-radius: u.rem(23);
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .info_text {
+        color: #f55556;
+        font-size: u.rem(16);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px; /* 100% */
+      }
+
+      .info_img {
+        width: u.rem(26);
+        height: u.rem(24);
+      }
+    }
+
+    .header_text {
+      margin-top: u.rem(35);
+      width: u.rem(578);
+      height: u.rem(264);
+
+      .text_1 {
+        color: #2e2e2e;
+        font-size: u.rem(74);
+        font-weight: 700;
+        line-height: u.rem(88); /* 118.919% */
+        letter-spacing: u.rem(-0.74);
+      }
+
+      .text_2 {
+        margin-left: u.rem(10);
+        color: #f54748;
+        font-size: u.rem(74);
+        font-weight: 500;
+        line-height: u.rem(88);
+        letter-spacing: u.rem(-3.7);
+      }
+    }
+
+    .text_desc {
+      width: u.rem(478);
+      height: u.rem(60);
+      margin-top: u.rem(32);
+
+      color: #676767;
+      font-size: u.rem(18);
+      font-weight: 400;
+      line-height: u.rem(30); /* 166.667% */
+      letter-spacing: u.rem(0.09);
+    }
+
+    .button_container {
+      margin-top: u.rem(60);
+      width: u.rem(480);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .button_order {
+        width: u.rem(186);
+        height: u.rem(50);
+
+        border-radius: u.rem(12);
+        border: none;
+        background-color: #f54748;
+        font-size: u.rem(16);
+        color: #fff;
+        font-weight: 500;
+        font-family: "Poppins";
+      }
+
+      .process_container {
+        .button_process {
+          height: u.rem(50);
+          width: u.rem(50);
+          border-radius: 50%;
+          border: none;
+          box-shadow: 0 0 u.rem(10) 0 hsla(208, 16%, 16%, 0.1);
+          background-color: #fff;
+          text-align: center;
+          color: #fdc55e;
+          margin-right: u.rem(20);
+
+          span {
+            color: #363636;
+
+            font-size: u.rem(20);
+
+            font-weight: 500;
+            line-height: u.rem(20); /* 100% */
+            letter-spacing: -0.2px;
+          }
+        }
+      }
+    }
+  }
+}

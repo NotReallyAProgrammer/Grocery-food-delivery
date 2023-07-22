@@ -1,9 +1,11 @@
 <footer class="footer">
   <div class="footer__top">
     <img [src]="'../../assets/pics/logo.png'" alt="logo" class="logo" />
-    <span class="company"> Company</span>
-    <span class="service"> Services</span>
-    <span class="end"> Get in touch</span>
+    <div class="header_container">
+      <span class="company">Company</span>
+      <span class="service">Services</span>
+      <span class="end">Get in touch</span>
+    </div>
   </div>
 
   <div class="footer__middle">
@@ -12,14 +14,14 @@
       transportation vehicles.
     </p>
 
-    <div class="company_container">
+    <div>
       <ul>
         <li *ngFor="let company of companyData">
           <a>{{ company.label }}</a>
         </li>
       </ul>
     </div>
-    <div class="service_container">
+    <div>
       <ul>
         <li *ngFor="let service of serviceData">
           <a>{{ service.label }}</a>

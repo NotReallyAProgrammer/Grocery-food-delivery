@@ -6,42 +6,43 @@
 
   &__top {
     display: flex;
-
+    justify-content: space-between;
     .logo {
-      margin-right: u.rem(309);
       height: u.rem(41);
       width: (155);
     }
 
-    span {
-      color: hsl(0, 0%, 18%);
-      font-size: u.rem(18);
-      font-style: normal;
-      font-weight: 600;
-      line-height: u.rem(20);
-      letter-spacing: u.rem(-0.18);
-    }
+    .header_container {
+      margin-right: u.rem(315);
 
-    .company,
-    .service {
-      margin-right: u.rem(160);
-    }
-
-    .end {
-      margin-right: u.rem(30);
+      span {
+        color: hsl(0, 0%, 18%);
+        font-size: u.rem(18);
+        font-style: normal;
+        font-weight: 600;
+        line-height: u.rem(20);
+        letter-spacing: u.rem(-0.18);
+      }
+      .company {
+        margin-right: u.rem(167);
+      }
+      .service {
+        margin-right: u.rem(210);
+      }
     }
   }
 
   &__middle {
     margin-top: u.rem(25);
     display: flex;
+    justify-content: space-between;
 
     .text_desc {
       color: #676767;
       font-size: u.rem(16);
       font-style: normal;
       font-weight: 400;
-      line-height: 26px;
+      line-height: u.rem(26);
       width: u.rem(266);
       margin-right: u.rem(260);
     }
@@ -54,10 +55,56 @@
       font-weight: 400;
       line-height: u.rem(40); /* 250% */
     }
-    .company_container {
-      margin-right: u.rem(160);
+
+    .subscribe_desc {
+      width: u.rem(191);
+      margin-right: u.rem(230);
+      color: #888;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: u.rem(26);
+      text-align: left;
     }
-    .service_container {
+  }
+  .line_container {
+    width: u.rem(1634);
+    height: u.rem(1.5);
+    background: #ececec;
+    margin-inline: auto;
+    margin-top: u.rem(80);
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: u.rem(30);
+
+    .all_rights_reserved {
+      color: #8c8c8c;
+      text-align: center;
+      font-family: Poppins;
+      font-size: u.rem(14);
+      font-style: normal;
+      font-weight: 400;
+      line-height: u.rem(24); /* 171.429% */
+    }
+
+    .policy_container {
+      a {
+        color: #747474;
+        text-align: right;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 171.429% */
+      }
+      .terms {
+        margin-right: u.rem(25);
+      }
     }
   }
 }

@@ -4,9 +4,10 @@
   background-color: #fff;
   width: 100%;
   top: 0;
-  height: u.rem(92);
+  height: u.rem(124);
   position: fixed;
-  padding: u.rem(16) u.rem(24) 0 u.rem(24);
+  padding-top: u.rem(32);
+  padding: 0 u.rem(24) 0 u.rem(24);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,14 +46,13 @@
     margin-right: u.rem(135);
 
     .search_container {
+      align-items: center;
       width: u.rem(289);
       height: u.rem(54);
-
       border-radius: u.rem(5);
       box-shadow: 0 0 u.rem(10) 0 hsla(208, 16%, 16%, 0.1);
+
       .search-icon {
-        position: absolute;
-        margin-top: u.rem(26);
         margin-left: u.rem(20);
         font-size: u.rem(14);
         line-height: u.rem(38);
@@ -61,38 +61,35 @@
       }
 
       .search {
-        width: u.rem(220);
+        width: u.rem(200);
         height: u.rem(54);
-        padding-left: u.rem(40);
-        padding-right: u.rem(40);
         font-size: u.rem(14);
         border: none;
         outline: 0;
         color: #74788d;
+        padding-left: u.rem(10);
       }
 
       .line {
         position: absolute;
+        margin-top: u.rem(48);
+        margin-left: u.rem(220);
         width: u.rem(2);
         height: u.rem(27);
-        margin-top: u.rem(32);
-        margin-right: u.rem(220);
-        right: 0;
         top: 0;
         background-color: hsl(0, 0%, 95%);
       }
 
       .cart {
         cursor: pointer;
-        margin-left: u.rem(25);
+        margin-left: u.rem(10);
         font-size: u.rem(18);
-        align-items: center;
 
         .cart_notification {
           position: relative;
           width: u.rem(28);
           height: u.rem(28);
-          top: u.rem(-75);
+          top: u.rem(-70);
           right: u.rem(-10);
           margin-left: auto;
           padding-top: u.rem(3.5);
